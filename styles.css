@@ -1,0 +1,185 @@
+/* Стили для таблицы и её элементов */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+    padding: 12px;
+}
+
+/* Стили для заголовков таблицы */
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Стили для ссылок заказа */
+a {
+    text-decoration: none;
+    color: #1e90ff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+/* Анимация для строк таблицы */
+tr {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Анимация для ячеек таблицы */
+td {
+    transition: transform 0.3s ease;
+}
+
+td:hover {
+    transform: scale(1.05);
+}
+/* Стили для поля поиска */
+/* Стили для header */
+header {
+    background-color: #1e90ff; /* Цвет фона */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff; /* Цвет текста */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Цвет ссылок */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0; /* Цвет ссылок при наведении */
+}
+
+/* Стили для поля поиска */
+#searchInput {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #ffffff; /* Цвет рамки при фокусе */
+    outline: none;
+}
+
+footer {
+    background-color: #1e90ff;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Стили для модальных окон */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Стили для содержимого модального окна */
+.modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+/* Стили для кнопки закрытия модального окна */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стили для формы регистрации */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для полей ввода и меток */
+.modal-content label {
+    margin-bottom: 8px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="password"],
+.modal-content input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+/* Стили для кнопки отправки формы */
+.modal-content input[type="submit"] {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1e90ff;
+    color: #fff;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+/* Увеличение пространства между элементами */
+.modal-content form > * {
+    margin-bottom: 12px;
+}
