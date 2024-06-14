@@ -183,3 +183,78 @@ footer {
 .modal-content form > * {
     margin-bottom: 12px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap; /* Allow navigation items to wrap */
+        justify-content: center; /* Center items horizontally */
+    }
+    
+    nav ul li {
+        margin: 10px; /* Adjust margin for spacing between list items */
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+        overflow-x: auto; /* Allow horizontal scrolling if table overflows */
+    }
+
+    .modal-content {
+        width: 90%; /* Adjust modal width for smaller screens */
+    }
+
+    /* Additional adjustments as needed */
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for even smaller screens */
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        width: 100%; /* Make the nav block span the full width */
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 5px;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+     table {
+        width: 100%; /* Make the table span the full width */
+        font-size: 8px; /* Adjust font size for better fit */
+    }
+
+    th,
+    td {
+        padding: 6px;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+
+    /* Additional adjustments as needed */
+}

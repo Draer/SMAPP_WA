@@ -1,17 +1,15 @@
 <?php
 // Параметры подключения к базе данных
-$servername = "sql.freedb.tech";
-$username = "freedb_pryme491";
-$password = "8WE8Px#84P3Yy?2";
-$dbname = "freedb_smapp491";
+$servername = "mysql-175725-0.cloudclusters.net";
+$username = "admin";
+$password = "vv5sgBoT";
+$dbname = "smapp_db";
+$port = 19948; // Порт для подключения
 
 try {
-    // Создаем подключение через PDO с указанием кодировки
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
-    // Устанавливаем режим обработки ошибок для PDO
+    $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname;charset=utf8", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
-    // Выводим сообщение об ошибке, если не удалось подключиться к базе данных
     echo "Ошибка подключения к базе данных: " . $e->getMessage();
 }
 ?>
